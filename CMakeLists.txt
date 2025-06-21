@@ -63,6 +63,7 @@ ament_auto_find_build_dependencies()
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(shape_msgs REQUIRED)
 
@@ -94,6 +95,7 @@ set(MSG_FILES
     "msg/PosTrackStatus.msg"
     "msg/GnssFusionStatus.msg"
     "msg/Heartbeat.msg"
+    "msg/OpticalFlowStamped.msg"
     "msg/MagHeadingStatus.msg"
     "msg/SvoStatus.msg"
     "msg/HealthStatusStamped.msg"
@@ -109,7 +111,7 @@ set(SRV_FILES
 rosidl_generate_interfaces(${PROJECT_NAME}
     ${MSG_FILES}
     ${SRV_FILES}
-    DEPENDENCIES builtin_interfaces std_msgs geometry_msgs shape_msgs
+    DEPENDENCIES builtin_interfaces std_msgs geometry_msgs shape_msgs sensor_msgs
 )
 
 # Install URDF files
