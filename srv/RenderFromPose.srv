@@ -1,0 +1,14 @@
+# Request
+geometry_msgs/PoseStamped target_pose
+int32 width
+int32 height  
+bool high_quality
+bool main_vision
+
+---
+
+# Response
+sensor_msgs/Image rendered_image
+float32 render_time_ms
+bool success
+string error_message

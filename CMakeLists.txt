@@ -99,6 +99,18 @@ set(MSG_FILES
     "msg/MagHeadingStatus.msg"
     "msg/SvoStatus.msg"
     "msg/HealthStatusStamped.msg"
+    "msg/CovisibilityEdge.msg"
+    "msg/KeyFrameOrb.msg"
+    "msg/KeyFramePose.msg"
+    "msg/KeyFrameImuBias.msg"
+    "msg/KeypointOrb.msg"
+    "msg/MapPointOrb.msg"
+    "msg/MapPruning.msg"
+    "msg/MapUpdateOrb.msg"
+    "msg/MapPointPosition.msg"
+    "msg/PoseGraphCorrection.msg"
+    "msg/GaussianTrainingStatus.msg"
+    "msg/GaussianSceneInfo.msg"
 )
 
 set(SRV_FILES
@@ -106,6 +118,8 @@ set(SRV_FILES
     "srv/StartSvoRec.srv"
     "srv/SetROI.srv"
     "srv/SetSvoFrame.srv"
+    "srv/RenderFromPose.srv"
+    "srv/SaveGaussianModel.srv"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}

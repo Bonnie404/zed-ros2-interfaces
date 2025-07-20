@@ -1,0 +1,11 @@
+# Request
+string file_path
+bool compress
+
+---
+
+# Response
+bool success
+string saved_path
+uint64 file_size_bytes
+string error_message
