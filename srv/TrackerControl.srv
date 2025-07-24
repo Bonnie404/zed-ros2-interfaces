@@ -1,0 +1,13 @@
+# Service for controlling the Tracker component in distributed SLAM
+# Used by server to pause/resume tracking on Jetson client
+
+# Command constants
+int8 PAUSE = 0
+int8 RESUME = 1
+
+# Request
+int8 command
+---
+# Response
+bool success
+string message

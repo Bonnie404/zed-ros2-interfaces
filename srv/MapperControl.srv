@@ -1,0 +1,16 @@
+# Service for controlling the LocalMapping component in distributed SLAM
+# Used by server to stop/release mapping and query status on Jetson client
+
+# Command constants
+int8 STOP = 0
+int8 RELEASE = 1
+int8 STATUS = 2
+
+# Request
+int8 command
+---
+# Response
+bool success
+bool is_stopped
+bool is_finished
+string message

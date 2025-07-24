@@ -103,6 +103,7 @@ set(MSG_FILES
     "msg/KeyFrameOrb.msg"
     "msg/KeyFramePose.msg"
     "msg/KeyFrameImuBias.msg"
+    "msg/ImuStateOrb.msg"
     "msg/KeypointOrb.msg"
     "msg/MapPointOrb.msg"
     "msg/MapPruning.msg"
@@ -111,6 +112,8 @@ set(MSG_FILES
     "msg/PoseGraphCorrection.msg"
     "msg/GaussianTrainingStatus.msg"
     "msg/GaussianSceneInfo.msg"
+    "msg/ResetRequest.msg"
+    "msg/ResetAck.msg"
 )
 
 set(SRV_FILES
@@ -120,6 +123,8 @@ set(SRV_FILES
     "srv/SetSvoFrame.srv"
     "srv/RenderFromPose.srv"
     "srv/SaveGaussianModel.srv"
+    "srv/TrackerControl.srv"
+    "srv/MapperControl.srv"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
