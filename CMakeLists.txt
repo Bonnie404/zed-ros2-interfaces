@@ -125,6 +125,8 @@ set(SRV_FILES
     "srv/SaveGaussianModel.srv"
     "srv/TrackerControl.srv"
     "srv/MapperControl.srv"
+    "srv/SaveAreaMemory.srv"
+    "srv/GetImuCalibration.srv"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
