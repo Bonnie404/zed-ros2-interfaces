@@ -4,8 +4,8 @@
 # Response
 bool success
 string error_message
-float64 gyro_noise_density      # rad/s/√Hz
-float64 acc_noise_density       # m/s²/√Hz
-float64 gyro_random_walk        # rad/s^1.5
-float64 acc_random_walk         # m/s^2.5
+float64 gyro_noise_density      # rad/s/√Hz - White noise (angle random walk)
+float64 acc_noise_density       # m/s²/√Hz - White noise (velocity random walk)
+float64 gyro_random_walk        # rad/s^1.5 - Bias random walk
+float64 acc_random_walk         # m/s^2.5 - Bias random walk
 float64 temperature             # Celsius (for temperature compensation)
